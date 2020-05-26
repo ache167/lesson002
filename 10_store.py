@@ -51,6 +51,28 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 
 # TODO здесь ваш код
 
+tables_cost1 = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price']
+tables_cost2 = store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
+tables_cost = tables_cost1 + tables_cost2
+tables_count = store[goods['Стол']][0]['quantity'] + store[goods['Стол']][1]['quantity']
+print('Стол -', tables_count, 'шт, стоимость', tables_cost, 'руб')
+
+divan_cost1 = store[goods['Диван']][0]['quantity'] * store[goods['Диван']][0]['price']
+divan_cost2 = store[goods['Диван']][1]['quantity'] * store[goods['Диван']][1]['price']
+divan_cost = divan_cost1 + divan_cost2
+divan_count = store[goods['Диван']][0]['quantity'] + store[goods['Диван']][1]['quantity']
+print('Диван -', divan_count, 'шт, стоимость', divan_cost, 'руб')
+
+chair_cost1 = store[goods['Стул']][0]['quantity'] * store[goods['Стул']][0]['price']
+chair_cost2 = store[goods['Стул']][1]['quantity'] * store[goods['Стул']][1]['price']
+chair_cost3 = store[goods['Стул']][2]['quantity'] * store[goods['Стул']][2]['price']
+chair_cost = chair_cost1 + chair_cost2 + chair_cost3
+chair_count = (store[goods['Стул']][0]['quantity']
+               + store[goods['Стул']][1]['quantity']
+               + store[goods['Стул']][2]['quantity'])
+
+print('Стул -', chair_count, 'шт, стоимость', chair_cost, 'руб')
+
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
 # нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
